@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AltLog</title>
+<style>
+  :root {
+    --canvas: #F4F1E8;
+    --surface: #FFFFFF;
+    --text: #0E1014;
+    --text-secondary: #5A6068;
+    --accent: #2F6B3B;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --canvas: #0B0F14;
+      --surface: #161B22;
+      --text: #F2F4F6;
+      --text-secondary: #A5ABB2;
+      --accent: #5FAE71;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+    background: var(--canvas);
+    color: var(--text);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+  h1 { font-size: 40px; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 24px; }
+  h2 { font-size: 22px; font-weight: 600; margin: 40px 0 12px; }
+  p, li { font-size: 17px; color: var(--text); }
+  .muted { color: var(--text-secondary); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  nav { display: flex; gap: 16px; margin-top: 16px; flex-wrap: wrap; }
+  nav a {
+    padding: 10px 16px;
+    background: var(--surface);
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  .hero { padding: 80px 0 24px; }
+  .tagline { font-size: 22px; color: var(--text-secondary); margin: 0 0 32px; }
+  footer { margin-top: 80px; font-size: 13px; color: var(--text-secondary); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <h1>AltLog</h1>
+    <p class="tagline">Barometric elevation logger for iPhone. Reads your pressure sensor, not GPS. Counts metres climbed, descended, and stair-equivalents.</p>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </section>
+
+  <section>
+    <h2>What it does</h2>
+    <p>
+      Tap Start before a walk, hike, or trip up the stairs. AltLog reads the iPhone's
+      built-in barometric pressure sensor (the chip behind Apple's Floors Climbed metric)
+      and tallies cumulative ascent, descent, and stair-equivalents in real time. Tap Stop
+      when you're done — the session lands in History as a scrubbable altitude profile.
+    </p>
+    <h2>Why no GPS</h2>
+    <p>
+      Pressure is plentiful and free. It works in parking garages, multi-story buildings,
+      stairwells, elevators, and dense forest where GPS struggles. Battery cost is
+      negligible: a long city walk costs you a single-digit percentage of battery.
+    </p>
+    <h2>Private by design</h2>
+    <p>
+      No account. No cloud. No analytics. No third-party SDKs. All pressure samples are
+      processed on-device and only a downsampled summary is stored in SwiftData.
+      Deleting the app removes everything.
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Ilia Filiaev. AltLog is a logging utility, not a navigation tool.
+  </footer>
+</div>
+</body>
+</html>
