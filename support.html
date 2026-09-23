@@ -1,125 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Support — AltLog</title>
-<style>
-  :root {
-    --canvas: #F4F1E8;
-    --surface: #FFFFFF;
-    --text: #0E1014;
-    --text-secondary: #5A6068;
-    --accent: #2F6B3B;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --canvas: #0B0F14;
-      --surface: #161B22;
-      --text: #F2F4F6;
-      --text-secondary: #A5ABB2;
-      --accent: #5FAE71;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
-    background: var(--canvas);
-    color: var(--text);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px; }
-  h1 { font-size: 36px; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 24px; }
-  h2 { font-size: 20px; font-weight: 600; margin: 32px 0 12px; }
-  p, li { font-size: 17px; }
-  a { color: var(--accent); }
-  .back { font-size: 15px; }
-  .card {
-    margin: 24px 0;
-    padding: 20px 24px;
-    background: var(--surface);
-    border-radius: 14px;
-  }
-  details {
-    background: var(--surface);
-    border-radius: 14px;
-    padding: 16px 20px;
-    margin: 12px 0;
-  }
-  details summary { font-weight: 600; cursor: pointer; list-style: none; }
-  details summary::-webkit-details-marker { display: none; }
-  details[open] summary { margin-bottom: 12px; }
-</style>
+<meta charset="utf-8">
+<title>AltLog Support</title>
+<link rel="canonical" href="https://iliafiliaev.com/altlog/support/">
+<meta http-equiv="refresh" content="0; url=https://iliafiliaev.com/altlog/support/">
+<script>location.replace("https://iliafiliaev.com/altlog/support/" + location.hash);</script>
 </head>
 <body>
-<div class="wrap">
-  <p class="back"><a href="index.html">← AltLog</a></p>
-  <h1>Support</h1>
-
-  <div class="card">
-    The fastest way to reach us is email:
-    <a href="mailto:filyaevilya21@gmail.com">filyaevilya21@gmail.com</a><br>
-    We usually respond within two business days.
-  </div>
-
-  <h2>Common questions</h2>
-
-  <details>
-    <summary>Nothing happens on the iOS Simulator.</summary>
-    <p>
-      Apple's iOS Simulator does not provide a barometric sensor. AltLog needs a
-      physical iPhone (any iPhone 6 or later includes the pressure chip).
-    </p>
-  </details>
-
-  <details>
-    <summary>iOS asked for Motion &amp; Fitness — why?</summary>
-    <p>
-      The barometer sits behind the Motion &amp; Fitness permission. Granting it lets
-      AltLog read relative altitude. AltLog still does not count steps and does not read
-      heart rate or any health data.
-    </p>
-  </details>
-
-  <details>
-    <summary>My ascent says zero even though I climbed stairs.</summary>
-    <p>
-      Two common causes:
-    </p>
-    <ul>
-      <li>The session wasn't started. Tap Start <em>before</em> the climb, not after.</li>
-      <li>Direction threshold is too high. Open Settings → AltLog and lower the
-      "Direction threshold" slider. The default 0.40 m is tuned to suppress sub-metre
-      noise; some buildings have unusually shallow stairs.</li>
-    </ul>
-  </details>
-
-  <details>
-    <summary>Where is my history stored?</summary>
-    <p>
-      On your device, in SwiftData. Nothing is sent anywhere. Deleting the app removes
-      everything.
-    </p>
-  </details>
-
-  <details>
-    <summary>How accurate is barometric altitude?</summary>
-    <p>
-      The chip is repeatable to about ±10 cm in calm conditions. Weather fronts cause
-      slow drift over tens of minutes — AltLog's hysteresis filter cancels most of
-      that, so a 5-minute trip up four flights of stairs reads correctly. Pressurised
-      vehicles (airplanes, modern subway cars) report the cabin pressure, not the
-      external altitude.
-    </p>
-  </details>
-
-  <h2>Found a bug?</h2>
-  <p>
-    Drop us an email with: iOS version, the kind of climb you were doing, and a short
-    description of what you saw vs what you expected. Screenshots help.
-  </p>
-</div>
+<p>AltLog Support has moved to <a href="https://iliafiliaev.com/altlog/support/">https://iliafiliaev.com/altlog/support/</a>.</p>
 </body>
 </html>
